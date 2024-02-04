@@ -3,4 +3,4 @@ function sum(a, b) {
   return console.log(`The sum of A:${a} and B:${b} is ${sum}`);
 }
 
-module.exports = sum;
+export default sum;
