@@ -4,14 +4,14 @@ const db = pgPromise()("postgres://postgres:postgres@localhost:5432/postgres")
 
 const setupDB = async () => {
    await db.none(`
-     DROP TABLE CASCADE IF EXISTS planets;
+     DROP TABLE IF EXISTS planets;
      CREATE TABLE planets (
        id SERIAL NOT NULL PRIMARY KEY,
        name TEXT NOT NULL,
        image TEXT
      );
 
-     DROP TABLE CASCADE IF EXISTS users;
+     DROP TABLE IF EXISTS users;
      CREATE TABLE users (
        id SERIAL NOT NULL PRIMARY KEY,
        username TEXT NOT NULL,
