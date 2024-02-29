@@ -2,7 +2,7 @@ import express from 'express';
 import "express-async-errors";
 import morgan from 'morgan';
 import multer from 'multer'
-import { getAll, getOneById, create, updateById, deleteById, createImage } from "./controllers/planets.js"
+import { getAll, getOneById, create, updateById, deleteById, createImage } from "./controllers/planets"
 const app = express()
 const port = 3000
 
